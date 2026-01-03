@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>It's over 9000</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+        }
+        input, select {
+            padding: 10px;
+            margin: 5px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="leftMember">
+    <select id="operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+        <option value="%">%</option>
+    </select>
+    <input type="text" id="rightMember">
+    <input type="submit" id="btnCalc" value="Try me!">
+    
+    <script>
+        $(document).ready(function() {
+            // This alert is part of the original spec requirements
+            setInterval(function() { alert('Please, use me...'); }, 30000);
+
+            // Now this click event will actually work
+            $('#btnCalc').click(function() {
+                let leftStr = $('#leftMember').val();
+                let rightStr = $('#rightMember').val();
+                let op = $('#operator').val();
+
+                // Regex check for positive integers
+                if (!/^\d+$/.test(leftStr) || !/^\d+$/.test(rightStr)) {
+                    alert('Error :(');
+                    return;
+                }
+
+                let left = parseInt(leftStr);
+                let right = parseInt(rightStr);
+                let result;
+
+                if ((op === '/' || op === '%') && right === 0) {
+                    console.log("It's over 9000!");
+                    alert("It's over 9000!");
+                    return;
+                }
+
+                if (op === '+') result = left + right;
+                else if (op === '-') result = left - right;
+                else if (op === '*') result = left * right;
+                else if (op === '/') result = left / right;
+                else if (op === '%') result = left % right;
+
+                console.log(result);
+                alert(result);
+            });
+        });
+    </script>
+</body>
+</html>

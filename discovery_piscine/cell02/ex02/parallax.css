@@ -1,0 +1,47 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: sans-serif;
+}
+/* Common style for both parallax sections */
+.parallax {
+    /* Set a specific height */
+    min-height: 100vh; 
+    /* THE PARALLAX MAGIC: */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Flexbox to center the text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Specific image for the top section */
+.bg1 {
+    background-image: url("img1.png");
+}
+/* Specific image for the bottom section */
+.bg2 {
+    background-image: url("img2.jpg");
+}
+/* Style for the text box on top of images */
+.message-box {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    color: white;
+    padding: 20px;
+    font-size: 25px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+/* The solid black block in the middle */
+.static-block {
+    height: 400px; /* Tall enough to scroll through */
+    background-color: black; /* Requirement: Black block */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}

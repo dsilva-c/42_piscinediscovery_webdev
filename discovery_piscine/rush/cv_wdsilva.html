@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Wdson da Silva</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <link href="assets/img/favicon.png" rel="icon">
+
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    /* Styles for the About Section Icons */
+    .about .about-icon-box {
+        text-align: center;
+        padding: 10px 5px;
+    }
+    .about .about-icon-box i {
+        color: #149ddd; /* Theme Blue */
+        font-size: 36px; /* Large icon size */
+        display: block;
+        margin-bottom: 10px;
+    }
+    .about .about-icon-box h4 {
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 5px;
+        color: black;
+        text-transform: uppercase; 
+    }
+    .about .about-icon-box span {
+        font-size: 14px;
+        display: block;
+    }
+
+    /* Style for the back button */
+    .btn-back-home {
+        border: 2px solid #149ddd;
+        color: #fff;
+        border-radius: 50px;
+        padding: 8px 25px;
+        transition: 0.3s;
+        display: inline-block;
+        text-decoration: none;
+    }
+    .btn-back-home:hover {
+        background: #149ddd;
+        color: #fff;
+    }
+
+    /* --- HERO EFFECTS --- */
+    #hero {
+        position: relative;
+        overflow: hidden; 
+    }
+    /* Canvas for Moving Balls */
+    #hero-canvas {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1; /* Behind text */
+        pointer-events: none;
+    }
+    /* Dim the background image slightly */
+    #hero img {
+        opacity: 0.4; 
+    }
+    /* Ensure container text is above canvas */
+    #hero .container {
+        position: relative;
+        z-index: 2;
+    }
+  </style>
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="assets/img/wdsilva_ppic.jpeg" alt="" class="img-fluid rounded-circle">
+    </div>
+
+    <div class="logo d-flex align-items-center justify-content-center">
+      <h1 class="sitename">Wdson da Silva</h1>
+    </div>
+
+    <div class="social-links text-center">
+      <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/wdson-da-silva-133317107/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="text-center mt-auto pb-3">
+        <a href="index.html" class="btn-back-home">
+            <i class="bi bi-arrow-left"></i> Back to Landing
+        </a>
+    </div>
+
+  </header>
+
+  <main class="main">
+
+    <section id="hero" class="hero section dark-background">
+
+      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in" class="">
+      
+      <canvas id="hero-canvas"></canvas>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <h2>Wdson da Silva </h2>
+        <p>I'm a <span class="typed" data-typed-items="Bachelor of Science in Chemistry with a Postgraduate Specialization in Active Methodologies for Basic Education">Bachelor of Science in Chemistry with a Postgraduate Specialization in Active Methodologies for Basic Education</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+      </div>
+
+    </section>
+
+    <section id="about" class="about section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+      </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4">
+            <img src="assets/img/wdsilva_ppic.jpeg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 content">
+            
+            <div class="row">
+  <div class="col-lg-12" data-aos="fade-up">
+    <h3 class="resume-title">Professional Profile</h3>
+    <p>
+      Currently a Bachelor of Science in Chemistry with a Postgraduate Specialization in Active Methodologies for Basic Education. I am a versatile professional with a solid background in scientific research, education, and customer service. My academic journey at the State University of Maranhão and FAAMA has equipped me with strong analytical skills and a passion for innovative learning strategies.
+    </p>
+    <p>
+      I consider myself a highly adaptable and resilient individual, qualities demonstrated through my professional experiences in both Brazil and Portugal. From mentoring award-winning scientific projects to ensuring operational excellence in the restaurant and telecommunications industries, I consistently strive for efficiency and high standards. I am always open to new challenges that allow me to apply my problem-solving abilities and scientific mindset to real-world situations.
+    </p>
+    <p>
+      In my free time, I am an avid reader who loves to immerse myself in the stories I discover. I am also passionate about physical activities, especially running and playing volleyball. Furthermore, I have a deep love for cooking, which I see as a way to demonstrate care and affection. I consistently seek to engage in activities that promote both my personal and professional growth.
+    </p>
+  </div>
+</div>
+            <div class="row text-center mt-4">
+              
+              <div class="col-md about-icon-box">
+                <i class="bi bi-calendar-event"></i>
+                <h4>Birthday</h4>
+                <span>19th December, 1989 (36)</span>
+              </div>
+
+              <div class="col-md about-icon-box">
+                <i class="bi bi-telephone"></i>
+                <h4>Phone</h4>
+                <span>+351 969 360 575</span>
+              </div>
+
+              <div class="col-md about-icon-box">
+                <i class="bi bi-geo-alt"></i>
+                <h4>City</h4>
+                <span>Porto, Portugal</span>
+              </div>
+
+              <div class="col-md about-icon-box">
+                <i class="bi bi-envelope"></i>
+                <h4>Email</h4>
+                <span>wdson.silva@hotmail.com</span>
+              </div>
+
+            </div>
+            
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="skills" class="skills section light-background">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Skills</h2>
+      </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row skills-content skills-animation">
+
+          <div class="col-lg-6">
+            <h3 class="resume-title">Soft Skills</h3>
+
+            <div class="progress">
+              <span class="skill"><span>Altruism</span> <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill"><span>Creativity</span> <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill"><span>Perseverance</span> <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill"><span>Resilience</span> <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill"><span>Integrity</span> <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill"><span>Teamwork</span> <i class="val">85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill"><span>Organization</span> <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill"><span>Communication</span> <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <h3 class="resume-title mt-4">Web Development</h3>
+
+            <div class="progress">
+              <span class="skill"><span>HTML</span> <i class="val">10%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill"><span>CSS</span> <i class="val">10%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill"><span>JavaScript</span> <i class="val">10%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="resume" class="resume section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+      </div>
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Education</h3>
+  
+  <div class="resume-item">
+    <h4>Postgraduate Specialization in Active Methodologies for Basic Education</h4>
+    <h5>Completed Apr 2023</h5>
+    <p><em>Faculdade Adventista da Amazônia (FAAMA)</em></p>
+    <p>Specialization in Lato Sensu postgraduate studies. Focused on innovative pedagogical strategies, student-centered learning methodologies, and the integration of modern educational tools.</p>
+  </div>
+
+  <div class="resume-item">
+    <h4>Bachelor of Science in Chemistry</h4>
+    <h5>2009 - 2012</h5>
+    <p><em>State University of Maranhão (UEMA)</em></p>
+    <p>Degree focused on Chemistry and scientific education. Developed foundational knowledge in chemical analysis, laboratory practices, and scientific research methods.</p>
+  </div>
+
+  <h3 class="resume-title">Academic Activities and Awards</h3>
+  <div class="resume-item">
+    <h4>Scientific Mentorship and Recognition</h4>
+    <ul>
+      <li>Scientific Project Mentor at FAAMA Adventist School, 2022.</li>
+      <li>Recipient of the Research Incentive Award from União Norte Brasileira, 2018.</li>
+      <li>Mentor for the Chemistry Board project: A playful way to learn chemistry.</li>
+      <li>Participant in the 10th Brazilian Science and Technology Fair (USP), 2012.</li>
+      <li>Mentor for the project "Making money from waste" at the VII FECITEC, 2013.</li>
+    </ul>
+  </div>
+</div>
+      
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Professional Experience</h3>
+   
+  <div class="resume-item">
+    <h4>Inbound & Web Attendant</h4>
+    <h5>Jan 2023 - Mar 2023</h5>
+    <p><em>Randstad - Campanhã, Portugal</em></p>
+    <p>Managed customer inquiries regarding telecommunications products and services. Provided technical guidance and supported sales goals through effective communication and problem-solving.</p>
+  </div>
+
+  <div class="resume-item">
+    <h4>Kitchen Assistant</h4>
+    <h5>Oct 2022 - Mar 2023</h5>
+    <p><em>Bite my lunch Marmitas Saudáveis & Co. - Porto, Portugal</em></p>
+    <p>Assisted in high-volume food preparation following chef instructions. Responsible for side dish preparation, ingredient processing, and maintaining strict kitchen hygiene standards according to HACCP.</p>
+  </div>
+
+  <div class="resume-item">
+    <h4>Contracted Employee - Educational Administration</h4>
+    <h5>Jan 2017 - Aug 2021</h5>
+    <p><em>Secretaria de Educação do Pará - Belém, Brazil</em></p>
+    <p>Coordinated administrative and educational support activities within the state education department, ensuring operational efficiency.</p>
+  </div>
+
+  <div class="resume-item">
+    <h4>Mathematics Teacher</h4>
+    <h5>Jan 2016 - Jan 2019</h5>
+    <p><em>Colégio Adventista da FAAMA - Brazil</em></p>
+    <p>Planned and executed mathematics curricula for Basic Education. Developed classroom activities, managed student assessments, and integrated active learning methodologies.</p>
+  </div>
+
+  <div class="resume-item">
+    <h4>Volunteer Mentor for Scientific Initiation</h4>
+    <h5>Jan 2012 - Dec 2015</h5>
+    <p><em>Prefeitura Municipal de Imperatriz - Brazil</em></p>
+    <p>Guided students through the complete scientific research process, including problem definition, execution, and evaluation. Supervised projects in Physics, Biology, and Chemistry.</p>
+  </div>
+</div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="portfolio" class="portfolio section light-background">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+      </div>
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All Projects</li>
+            <li data-filter=".filter-app">App</li>
+          </ul>
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/wdsilva_project-1.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Olimpíada de Matemática</h4>
+                  <a href="assets/img/portfolio/wdsilva_project-1.jpeg" title="Olimpíada de Matemática" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="contact" class="contact section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+      </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-5">
+
+            <div class="info-wrap">
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Find Me</h3>
+                  <p>Rua da BoaVista 790, 3B Porto</p>
+                </div>
+              </div>
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Call Me</h3>
+                  <p>+351 969 306 575</p>
+                </div>
+              </div>
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email Me</h3>
+                  <p>wdson.silva@hotmail.com</p>
+                </div>
+              </div>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3004.35901890335!2d-8.61574342351977!3d41.14851671077715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2465063ed66cf1%3A0x19cfcc270756d372!2s42%20Porto!5e0!3m2!1spt-PT!2spt!4v1766089350888!5m2!1spt-PT!2spt" frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <label for="name-field" class="pb-2">Your Name</label>
+                  <input type="text" name="name" id="name-field" class="form-control" required="">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="email-field" class="pb-2">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email-field" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="subject-field" class="pb-2">Subject</label>
+                  <input type="text" class="form-control" name="subject" id="subject-field" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="message-field" class="pb-2">Message</label>
+                  <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>2025</span> <strong class="px-1 sitename">dcardoso & wdsilva (Web Dev Piscine Discovery)</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="credits">
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <script src="assets/js/main.js"></script>
+
+  <script>
+    const canvas = document.getElementById("hero-canvas");
+    const ctx = canvas.getContext("2d");
+
+    let width, height;
+    let particles = [];
+
+    // Resize canvas to fit the hero section
+    function resize() {
+      const hero = document.getElementById("hero");
+      width = canvas.width = hero.offsetWidth;
+      height = canvas.height = hero.offsetHeight;
+    }
+
+    // Particle Class
+    class Particle {
+      constructor() {
+        this.x = Math.random() * width;
+        this.y = Math.random() * height;
+        // Random velocity
+        this.vx = (Math.random() - 0.5) * 1.5;
+        this.vy = (Math.random() - 0.5) * 1.5;
+        this.size = Math.random() * 3 + 1; 
+        // Use theme blue color or white with transparency
+        this.color = `rgba(20, 157, 221, ${Math.random() * 0.5 + 0.2})`; 
+      }
+
+      update() {
+        this.x += this.vx;
+        this.y += this.vy;
+
+        // Bounce off edges
+        if (this.x < 0 || this.x > width) this.vx *= -1;
+        if (this.y < 0 || this.y > height) this.vy *= -1;
+      }
+
+      draw() {
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+        ctx.fillStyle = this.color;
+        ctx.fill();
+      }
+    }
+
+    function init() {
+      resize();
+      particles = [];
+      const particleCount = 60; 
+      for (let i = 0; i < particleCount; i++) {
+        particles.push(new Particle());
+      }
+    }
+
+    function animate() {
+      ctx.clearRect(0, 0, width, height);
+      particles.forEach(p => {
+        p.update();
+        p.draw();
+      });
+      requestAnimationFrame(animate);
+    }
+
+    window.addEventListener("resize", resize);
+    window.onload = () => {
+      init();
+      animate();
+    };
+  </script>
+
+</body>
+</html>

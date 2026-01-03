@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.card-container {
+    background-color: white;
+    width: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Creates the "card" look */
+    border-radius: 15px;
+    overflow: hidden; /* Keeps content inside rounded corners */
+}
+/* Requirement: Invisible table to align information */
+table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse; /* Removes space between cells */
+}
+td {
+    border: none; /* Makes the table invisible */
+    padding: 10px;
+}
+.header-title {
+    background-color: #000000;
+    color: white;
+    padding: 10px;
+    margin: 0;
+}
+/* Profile Image Styling */
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover;
+}
+/* Text Styling */
+.name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+.desc {
+    color: grey;
+    font-size: 14px;
+}
+/* Style for the tiny inline 42 logo */
+.tiny-logo {
+    height: 16px;           /* Matches the font size */
+    vertical-align: middle; /* Aligns it with the center of the text */
+    margin-bottom: 2px;     /* Slight adjustment for perfect alignment */
+}
+/* Social Icons Styling */
+.social-icon {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+/* Contact Button Styling */
+.contact-btn {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 25px; /* Pill shape */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 15px; /* Space at bottom of card */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.contact-btn:hover {
+    background-color: #000000;
+    transform: translateY(-2px); /* Slight lift effect */
+    box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+}

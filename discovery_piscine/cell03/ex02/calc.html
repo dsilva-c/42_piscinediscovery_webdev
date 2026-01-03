@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>It's over 9000</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+        }
+        input, select {
+            padding: 10px;
+            margin: 5px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="leftMember">
+    <select id="operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+        <option value="%">%</option>
+    </select>
+    <input type="text" id="rightMember">
+    <input type="submit" value="Try me!" onclick="calculate()">
+    <script>
+        // Requirement: Alert 'Please, use me...' every 30 seconds
+        setInterval(function() {
+            alert('Please, use me...');
+        }, 30000);
+        function calculate() {
+            // Get values from inputs
+            var leftStr = document.getElementById('leftMember').value;
+            var rightStr = document.getElementById('rightMember').value;
+            var op = document.getElementById('operator').value;
+            // Requirement: Both inputs must be positive integers (>= 0)
+            // We use a regex /^\d+$/ to ensure the string contains ONLY digits
+            if (!/^\d+$/.test(leftStr) || !/^\d+$/.test(rightStr)) {
+                alert('Error :(');
+                return;
+            }
+            var left = parseInt(leftStr);
+            var right = parseInt(rightStr);
+            var result;
+            // Requirement: Handle Division/Modulo by 0
+            if ((op === '/' || op === '%') && right === 0) {
+                console.log("It's over 9000!");
+                alert("It's over 9000!");
+                return;
+            }
+            // Perform Calculation
+            switch(op) {
+                case '+': result = left + right; break;
+                case '-': result = left - right; break;
+                case '*': result = left * right; break;
+                case '/': result = left / right; break;
+                case '%': result = left % right; break;
+            }
+            // Requirement: Display result in console AND alert
+            console.log(result);
+            alert(result);
+        }
+    </script>
+</body>
+</html>

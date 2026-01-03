@@ -1,0 +1,20 @@
+/* Removes the gap between the cells and makes table fullscreen */
+table {
+    border-collapse: collapse;
+    width: 100%;    /* Covers full width */
+    height: 100vh;  /* Covers full viewport height */
+}
+/* General styling for the table cells */
+td {
+    border: 1px solid black; 
+    padding: 20px;           
+    font-size: 20px;         
+}
+/* Specific color for the first box */
+.box1 {
+    background-color: lightyellow;
+}
+/* Specific color for the second box */
+.box2 {
+    background-color: lightblue;
+}

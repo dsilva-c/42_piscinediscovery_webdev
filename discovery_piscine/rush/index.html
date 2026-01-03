@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Piscine Discovery Rush</title>
+
+  <link href="assets/img/favicon.png" rel="icon">
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <style>
+    body {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('assets/img/hero-bg.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      font-family: "Raleway", sans-serif;
+      margin: 0;
+    }
+    .welcome-card {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 3rem;
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+      text-align: center;
+      max-width: 750px;
+      width: 100%;
+    }
+    .welcome-card h1 {
+      font-weight: 700;
+      margin-bottom: 1rem;
+      white-space: nowrap;
+    }
+    .welcome-card p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      color: #e0e0e0;
+    }
+    .btn-rush {
+      margin: 10px;
+      padding: 12px 35px;
+      border-radius: 50px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: all 0.3s ease;
+      background-color: #149ddd;
+      border: none;
+      color: white;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 250px;
+      white-space: nowrap; /* Forces text to stay on one line */
+    }
+    .btn-rush:hover {
+      background-color: #107ab0;
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      color: white;
+    }
+    /* Style for the 42 Logo */
+    .rush-logo {
+        width: 100px;
+        margin-bottom: 20px;
+        /* This filter turns a black logo into a white one */
+        filter: brightness(0) invert(1);
+    }
+    footer {
+        margin-top: auto;
+        padding-bottom: 20px;
+        font-size: 0.9rem;
+        opacity: 0.7;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container d-flex justify-content-center align-items-center flex-grow-1" data-aos="fade-up">
+    <div class="welcome-card">
+      
+      <img src="assets/img/42porto_logo.png" alt="42 Porto Logo" class="rush-logo">
+
+      <h1><i class="bi bi-code-slash"></i> WELCOME TO OUR RUSH <i class="bi bi-code-slash"></i></h1>
+      <p>Select a profile to view the resume</p>
+
+      <div class="d-flex flex-column align-items-center">
+        <a href="cv_dcardoso.html" class="btn-rush">
+            <i class="bi bi-person-fill"></i> dcardoso
+        </a>
+        <a href="cv_wdsilva.html" class="btn-rush">
+            <i class="bi bi-person-fill"></i> wdsilva
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+      &copy; 2025 dcardoso & wdsilva (Web Dev Piscine Discovery) 
+  </footer>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

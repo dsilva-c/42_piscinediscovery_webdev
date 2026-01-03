@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Balloon</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        /* Requirement: div 200px by 200px with a red background color.
+           Requirement: rounded borders to create a perfect round shape.
+        */
+        #balloon {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: width 0.2s, height 0.2s, background-color 0.2s; /* Optional: makes it look smoother */
+        }
+    </style>
+</head>
+<body>
+    <div id="balloon" onclick="expandBalloon()" onmouseleave="shrinkBalloon()"></div>
+    <script>
+        // State variables to track size and color
+        let currentSize = 200;
+        let colorIndex = 0; // 0=Red, 1=Green, 2=Blue
+        const colors = ['red', 'green', 'blue'];
+        // Function to handle the CLICK event
+        function expandBalloon() {
+            // Requirement: size grows by 10px
+            currentSize += 10;
+            // Requirement: if size > 420px, explode and return to original size (200px)
+            if (currentSize > 420) {
+                currentSize = 200;
+                colorIndex = 0; // Reset color to Red
+            } else {
+                // Requirement: color order red -> green -> blue -> red
+                colorIndex++;
+                if (colorIndex > 2) {
+                    colorIndex = 0;
+                }
+            }
+            updateBalloon();
+        }
+        // Function to handle the MOUSE LEAVE event
+        function shrinkBalloon() {
+            // Requirement: size shrinks by 5px, cannot go lower than 200px
+            if (currentSize > 200) {
+                currentSize -= 5;
+            }
+            // Requirement: color changes in reverse order
+            colorIndex--;
+            if (colorIndex < 0) {
+                colorIndex = 2; // Wrap around to Blue
+            }
+            updateBalloon();
+        }
+        // Helper function to apply changes to the DOM
+        function updateBalloon() {
+            const balloon = document.getElementById('balloon');
+            balloon.style.width = currentSize + 'px';
+            balloon.style.height = currentSize + 'px';
+            balloon.style.backgroundColor = colors[colorIndex];
+        }
+    </script>
+</body>
+</html>
