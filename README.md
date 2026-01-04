@@ -69,7 +69,7 @@ The curriculum is structured into specific modules called "Cells," each focusing
     * **[ex02bis](discovery_piscine/cell03/ex04/ex02bis)** (Calculator)
     * **[ex03bis](discovery_piscine/cell03/ex04/ex03bis)** (To-Do)
 
-### 🚀 [rush](rush/) - The Final Project
+### 🚀 [rush](discovery_piscine/rush/) - The Final Project
 *The capstone team project simulating a real-world client request.*
 
 **Team Members:** `dcardoso` & `wdsilva`
