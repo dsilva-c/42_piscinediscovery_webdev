@@ -27,47 +27,47 @@ The curriculum is structured into specific modules called "Cells," each focusing
 
 ## 📂 Repository Contents
 
-### 🐚 [cell00](cell00/) - Filesystem & Command Line
+### 🐚 [cell00](discovery_piscine/cell00/) - Filesystem & Command Line
 *Introduction to the Unix Shell, file management, and permissions.*
 
-* **[ex00](cell00/ex00)**: **Filesystem Navigation** — Basics of `ls`, `cd`, and `pwd` to navigate the terminal.
-* **[ex01](cell00/ex01)**: **Z** — Creating a file with specific character output using commands.
-* **[ex02](cell00/ex02)**: **midLS** — Specific `ls` command to list files/directories (excluding hidden ones), comma-separated.
-* **[ex03](cell00/ex03)**: **count_files** — A shell script to count regular files and directories in a target path.
-* **[ex04](cell00/ex04)**: **argv** — A script demonstrating how to handle command-line arguments in Bash.
-* **[ex05](cell00/ex05)**: **build** — An automation script to dynamically generate exercise folders (e.g., `ex00`) based on arguments.
+* **[ex00](discovery_piscine/cell00/ex00)**: **Filesystem Navigation** — Basics of `ls`, `cd`, and `pwd` to navigate the terminal.
+* **[ex01](discovery_piscine/cell00/ex01)**: **Z** — Creating a file with specific character output using commands.
+* **[ex02](discovery_piscine/cell00/ex02)**: **midLS** — Specific `ls` command to list files/directories (excluding hidden ones), comma-separated.
+* **[ex03](discovery_piscine/cell00/ex03)**: **count_files** — A shell script to count regular files and directories in a target path.
+* **[ex04](discovery_piscine/cell00/ex04)**: **argv** — A script demonstrating how to handle command-line arguments in Bash.
+* **[ex05](discovery_piscine/cell00/ex05)**: **build** — An automation script to dynamically generate exercise folders (e.g., `ex00`) based on arguments.
 
 ### 🧱 [cell01](cell01/) - HTML5 Structure
 *Building the skeletal structure of web pages using semantic HTML.*
 
-* **[ex00](cell01/ex00)**: **Hello World** — Creating the first valid HTML page.
-* **[ex01](cell01/ex01)**: **Title** — Structuring text with headings and centering content.
-* **[ex02](cell01/ex02)**: **Image** — Embedding and sizing images from external sources.
-* **[ex03](cell01/ex03)**: **Link** — Creating anchor tags and hyperlinks to external URLs (YouTube).
-* **[ex04](cell01/ex04)**: **Basics** — Advanced layout combining backgrounds, headers, footers, and HTML entities.
-* **[ex05](cell01/ex05)**: **Tab** — Structuring data using HTML tables.
-* **[ex06](cell01/ex06)**: **Responsive** — A challenge to create a fluid table that resizes with the window without using JavaScript.
+* **[ex00](discovery_piscine/cell01/ex00)**: **Hello World** — Creating the first valid HTML page.
+* **[ex01](discovery_piscine/cell01/ex01)**: **Title** — Structuring text with headings and centering content.
+* **[ex02](discovery_piscine/cell01/ex02)**: **Image** — Embedding and sizing images from external sources.
+* **[ex03](discovery_piscine/cell01/ex03)**: **Link** — Creating anchor tags and hyperlinks to external URLs (YouTube).
+* **[ex04](discovery_piscine/cell01/ex04)**: **Basics** — Advanced layout combining backgrounds, headers, footers, and HTML entities.
+* **[ex05](discovery_piscine/cell01/ex05)**: **Tab** — Structuring data using HTML tables.
+* **[ex06](discovery_piscine/cell01/ex06)**: **Responsive** — A challenge to create a fluid table that resizes with the window without using JavaScript.
 
 ### 🎨 [cell02](cell02/) - CSS3 & Layouts
 *Styling web pages and mastering modern layout systems.*
 
-* **[ex00](cell02/ex00)**: **Responsive II** — Converting the HTML table to a responsive design using an external `.css` stylesheet.
-* **[ex01](cell02/ex01)**: **SNCF Sandwich** — Building a complex dropdown menu ("sandwich" menu) using only CSS states (hover/active).
-* **[ex02](cell02/ex02)**: **Parallax** — Implementing a parallax scrolling effect using absolute positioning and CSS blocks.
-* **[ex03](cell02/ex03)**: **Card** — Designing a professional user profile card using Flexbox for alignment and spacing.
+* **[ex00](discovery_piscine/cell02/ex00)**: **Responsive II** — Converting the HTML table to a responsive design using an external `.css` stylesheet.
+* **[ex01](discovery_piscine/cell02/ex01)**: **SNCF Sandwich** — Building a complex dropdown menu ("sandwich" menu) using only CSS states (hover/active).
+* **[ex02](discovery_piscine/cell02/ex02)**: **Parallax** — Implementing a parallax scrolling effect using absolute positioning and CSS blocks.
+* **[ex03](discovery_piscine/cell02/ex03)**: **Card** — Designing a professional user profile card using Flexbox for alignment and spacing.
 
 ### ⚡ [cell03](cell03/) - JavaScript & jQuery
 *Adding interactivity and logic to the web browser.*
 
-* **[ex00](cell03/ex00)**: **Background** — A script that generates random colors and changes the page background on click (Vanilla JS).
-* **[ex01](cell03/ex01)**: **Balloon** — An interactive game where a balloon grows on click and explodes if it gets too big, handling multiple event listeners.
-* **[ex02](cell03/ex02)**: **Calculator** — A functional calculator built from scratch with input validation, alerts, and console logging.
-* **[ex03](cell03/ex03)**: **To-Do** — A Task Manager application using `cookies` or `localStorage` to save tasks persistently between reloads.
-* **[ex04](cell03/ex04)**: **If jQuery, I'm going too** — Refactoring the previous exercises using the **jQuery** library to understand the difference between Vanilla JS and libraries:
-    * **[ex00bis](cell03/ex04/ex00bis)** (Background)
-    * **[ex01bis](cell03/ex04/ex01bis)** (Balloon)
-    * **[ex02bis](cell03/ex04/ex02bis)** (Calculator)
-    * **[ex03bis](cell03/ex04/ex03bis)** (To-Do)
+* **[ex00](discovery_piscine/cell03/ex00)**: **Background** — A script that generates random colors and changes the page background on click (Vanilla JS).
+* **[ex01](discovery_piscine/cell03/ex01)**: **Balloon** — An interactive game where a balloon grows on click and explodes if it gets too big, handling multiple event listeners.
+* **[ex02](discovery_piscine/cell03/ex02)**: **Calculator** — A functional calculator built from scratch with input validation, alerts, and console logging.
+* **[ex03](discovery_piscine/cell03/ex03)**: **To-Do** — A Task Manager application using `cookies` or `localStorage` to save tasks persistently between reloads.
+* **[ex04](discovery_piscine/cell03/ex04)**: **If jQuery, I'm going too** — Refactoring the previous exercises using the **jQuery** library to understand the difference between Vanilla JS and libraries:
+    * **[ex00bis](discovery_piscine/cell03/ex04/ex00bis)** (Background)
+    * **[ex01bis](discovery_piscine/cell03/ex04/ex01bis)** (Balloon)
+    * **[ex02bis](discovery_piscine/cell03/ex04/ex02bis)** (Calculator)
+    * **[ex03bis](discovery_piscine/cell03/ex04/ex03bis)** (To-Do)
 
 ### 🚀 [rush](rush/) - The Final Project
 *The capstone team project simulating a real-world client request.*
