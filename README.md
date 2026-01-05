@@ -1,6 +1,6 @@
 <div align="center">
 
-# 42 Piscine Discovery Web 🏊‍♂️ 💻 🌐
+# 42 Piscine Discovery Web
 
 ![42 Web](https://img.shields.io/badge/42-Piscine_Discovery_Web-00babc?style=for-the-badge&logo=42)
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
