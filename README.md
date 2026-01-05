@@ -7,13 +7,13 @@
 ![jQuery](https://img.shields.io/badge/jquery-%230769AD.svg?style=for-the-badge&logo=jquery&logoColor=white)
 ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
 
-## 📌 About The Project
+## 📌 About the project
 
 This repository contains my work from the 1st edition of the **Piscine Discovery Web** at **42 Porto**.
 
 The **Piscine Discovery** is an intensive 5-day bootcamp designed to introduce students and non-students to the world of web development. Operating under 42's **peer-learning pedagogy**, this curriculum challenges us to build a functional web stack from the ground up without formal lectures. We solve problems by reading documentation, testing code, and collaborating with peers.
 
-### Curriculum Overview
+### Curriculum overview
 
 The curriculum is structured into specific modules called "Cells," each focusing on a distinct layer of web technology:
 
@@ -25,9 +25,9 @@ The curriculum is structured into specific modules called "Cells," each focusing
 
 ---
 
-## 📂 Repository Contents
+## 📂 Repository contents
 
-### 🐚 [cell00](discovery_piscine/cell00/) - Filesystem & Command Line
+### 🐚 [cell00](discovery_piscine/cell00/) - Filesystem & command Line
 *Introduction to the Unix Shell, file management, and permissions.*
 
 * **[ex00](discovery_piscine/cell00/ex00)**: **Filesystem Navigation** — Basics of `ls`, `cd`, and `pwd` to navigate the terminal.
@@ -48,7 +48,7 @@ The curriculum is structured into specific modules called "Cells," each focusing
 * **[ex05](discovery_piscine/cell01/ex05)**: **Tab** — Structuring data using HTML tables.
 * **[ex06](discovery_piscine/cell01/ex06)**: **Responsive** — A challenge to create a fluid table that resizes with the window without using JavaScript.
 
-### 🎨 [cell02](cell02/) - CSS3 & Layouts
+### 🎨 [cell02](cell02/) - CSS3 & layouts
 *Styling web pages and mastering modern layout systems.*
 
 * **[ex00](discovery_piscine/cell02/ex00)**: **Responsive II** — Converting the HTML table to a responsive design using an external `.css` stylesheet.
@@ -69,10 +69,10 @@ The curriculum is structured into specific modules called "Cells," each focusing
     * **[ex02bis](discovery_piscine/cell03/ex04/ex02bis)** (Calculator)
     * **[ex03bis](discovery_piscine/cell03/ex04/ex03bis)** (To-Do)
 
-### 🚀 [rush](discovery_piscine/rush/) - The Final Project
+### 🚀 [rush](discovery_piscine/rush/) - The final project
 *The capstone team project simulating a real-world client request.*
 
-**Team Members:** `dcardoso` & `wdsilva`
+**Team members:** `dcardoso` & `wdsilva`
 
 The **Rush** challenges us to build a complete, cohesive mini-website consisting of a landing page and two professional resumes.
 
@@ -91,7 +91,7 @@ The **Rush** challenges us to build a complete, cohesive mini-website consisting
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠️ Tech stack
 
 | Category | Technologies |
 | :--- | :--- |
@@ -102,7 +102,7 @@ The **Rush** challenges us to build a complete, cohesive mini-website consisting
 
 ---
 
-## 📝 License & Credits
+## 📝 License & credits
 
 * **Curriculum:** [42 Porto](https://www.42network.org/campus/42-porto/)
 * **Rush Template:** [BootstrapMade](https://bootstrapmade.com/)
