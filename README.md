@@ -38,6 +38,8 @@ The curriculum is structured into specific modules called "Cells," each focusing
 ### 🐚 [cell00](discovery_piscine/cell00/) - Filesystem & Command Line
 *Introduction to the Unix Shell, file management, and permissions.*
 
+<div align="center">
+
 <table width="100%">
     <thead>
         <tr>
@@ -80,8 +82,12 @@ The curriculum is structured into specific modules called "Cells," each focusing
     </tbody>
 </table>
 
+</div>
+
 ### 🧱 [cell01](cell01/) - HTML5 Structure
 *Building the skeletal structure of web pages using semantic HTML.*
+
+<div align="center">
 
 <table width="100%">
     <thead>
@@ -130,8 +136,12 @@ The curriculum is structured into specific modules called "Cells," each focusing
     </tbody>
 </table>
 
+</div>
+
 ### 🎨 [cell02](cell02/) - CSS3 & Layouts
 *Styling web pages and mastering modern layout systems.*
+
+<div align="center">
 
 <table width="100%">
     <thead>
@@ -165,8 +175,12 @@ The curriculum is structured into specific modules called "Cells," each focusing
     </tbody>
 </table>
 
+</div>
+
 ### ⚡ [cell03](cell03/) - JavaScript & jQuery
 *Adding interactivity and logic to the web browser.*
+
+<div align="center">
 
 <table width="100%">
     <thead>
@@ -205,6 +219,8 @@ The curriculum is structured into specific modules called "Cells," each focusing
     </tbody>
 </table>
 
+</div>
+
 ### 🚀 [rush](discovery_piscine/rush/) - The Final Project
 *The capstone team project simulating a real-world client request.*
 
@@ -228,6 +244,8 @@ The **Rush** challenges us to build a complete, cohesive mini-website consisting
 ---
 
 ## 🛠️ Tech stack
+
+<div align="center">
 
 <table width="100%">
     <thead>
@@ -266,6 +284,8 @@ The **Rush** challenges us to build a complete, cohesive mini-website consisting
         </tr>
     </tbody>
 </table>
+
+</div>
 
 ---
 
