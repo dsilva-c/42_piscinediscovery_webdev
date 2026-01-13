@@ -1,16 +1,18 @@
+<img width="2000" height="500" alt="42WebDevPiscineDiscovery_cover" src="https://github.com/user-attachments/assets/900caaee-5c70-4583-bcf8-639e476826e5" />
+
 <div align="center">
 
-# 42 Piscine Discovery Web
+# 42 Web Dev Piscine Discovery
 
-![42 Web](https://img.shields.io/badge/42-Piscine_Discovery_Web-00babc?style=for-the-badge&logo=42)
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-![jQuery](https://img.shields.io/badge/jquery-%230769AD.svg?style=for-the-badge&logo=jquery&logoColor=white)
-![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
+![42](https://img.shields.io/badge/42Porto-000000?style=for-the-badge&logo=42&logoColor=white)![Santander](https://img.shields.io/badge/Fundação_Santander-ED1C24?style=for-the-badge&logo=santander&logoColor=white)![Piscine](https://img.shields.io/badge/Piscine_Discovery_Web-00babc?style=for-the-badge)
+<img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" style="margin-right:6px"/>
+<img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" style="margin-right:6px"/>
+<img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" style="margin-right:6px"/>
+<img src="https://img.shields.io/badge/jquery-%230769AD.svg?style=for-the-badge&logo=jquery&logoColor=white" style="margin-right:6px"/>
+<img src="https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white"/>
 
 <p>
-    This repository contains my work from the 1st edition of the <b>Piscine Discovery Web</b> at <b>42 Porto</b>.
+    This repository contains my work from the 1st edition of the <b>Web Dev Piscine Discovery</b> at <b>42 Porto</b>.
 </p>
 
 </div>
