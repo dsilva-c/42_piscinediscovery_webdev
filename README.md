@@ -5,6 +5,7 @@
 # 42 Web Dev Piscine Discovery
 
 ![42](https://img.shields.io/badge/42Porto-000000?style=for-the-badge&logo=42&logoColor=white)![Santander](https://img.shields.io/badge/Fundação_Santander-ED1C24?style=for-the-badge&logo=santander&logoColor=white)![Piscine](https://img.shields.io/badge/Piscine_Discovery_Web-00babc?style=for-the-badge)
+<br/>
 <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" style="margin-right:6px"/>
 <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" style="margin-right:6px"/>
 <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" style="margin-right:6px"/>
